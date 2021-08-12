@@ -8,19 +8,21 @@ class Monster {
         self.df = df
     }
     func display() {
-        print("\(name)が現れた")
         print("HP:\(hp)")
         print("DF:\(df)")
+    }
+    func appear() {
+        print("\(name)が現れた")
+        display()
     }
     func evolution() {
         self.hp += 100
         self.df += 50
         print("\(name)が進化した")
-        print("HP:\(hp)")
-        print("Df:\(df)")
+        display()
     }
 }
 
 let Monster1 = Monster(name: "slime",hp: 50,df: 100)
-Monster1.display()
+Monster1.appear()
 Monster1.evolution()
