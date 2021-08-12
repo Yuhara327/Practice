@@ -12,16 +12,15 @@ class Monster {
         print("HP:\(hp)")
         print("DF:\(df)")
     }
+    func evolution() {
+        self.hp += 100
+        self.df += 50
+        print("\(name)が進化した")
+        print("HP:\(hp)")
+        print("Df:\(df)")
+    }
 }
+
 let Monster1 = Monster(name: "slime",hp: 50,df: 100)
 Monster1.display()
-
-
-func evolution (monster: Monster){
-    monster.hp += 100
-    monster.df += 50
-    print("\(monster.name)が進化した")
-    print("HP:\(monster.hp)")
-    print("DF:\(monster.df)")
-}
-evolution(monster: Monster1)
+Monster1.evolution()
