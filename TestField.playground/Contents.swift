@@ -20,7 +20,7 @@ Monster2.hp = 200
 Monster2.df = 100
 Monster2.display()
 
-func Evolution (monsterNumber: String){
+func Evolution (monsterNumber: Monster){
     monsterNumber.hp += 100
     monsterNumber.df += 50
     print("\(monsterNumber.name!)が進化した")
@@ -28,3 +28,4 @@ func Evolution (monsterNumber: String){
     print("DF:\(monsterNumber.df!)")
 }
 Evolution(monsterNumber: Monster1)
+Evolution(monsterNumber: Monster2)
