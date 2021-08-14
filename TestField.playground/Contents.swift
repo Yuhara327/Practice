@@ -16,8 +16,8 @@ class Monster {
         display()
     }
     func evolution() {
-        self.hp += 100
-        self.df += 50
+        self.hp *= 10
+        self.df *= 10
         print("\(name)が進化した")
         display()
     }
