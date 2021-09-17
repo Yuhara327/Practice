@@ -58,4 +58,3 @@ if emptyString.isEmpty {
 var variableString = "Horse"
 variableString += " and carriage"//変えられるなぜなら変数なので
 let constantString = "Hgihlander"//変えられないなぜなら定数だから
-
