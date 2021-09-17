@@ -44,4 +44,18 @@ let threeDoubleQuotationMarks = """
     Escaping the first quotation mark\"""
     Escaping the all three quotation marks\"\"\"
     """; print(threeDoubleQuotationMarks)
+let threeMoreDoubleuotationMarks = #"""
+Here are three more double quotes: """
+"""#//特殊文字を出したい場合#をつける→この中で特殊文字が使いたい場合も#をつける
+print(threeMoreDoubleuotationMarks)
+//空の文字列の初期化
+var emptyString = ""//空のリテラル
+var anotherEmptyString = String()//イニシャライザ構文(?
+if emptyString.isEmpty {
+    print("Nothing to see here")//.isEmptyでチェックできる
+}
+//可変性
+var variableString = "Horse"
+variableString += " and carriage"//変えられるなぜなら変数なので
+let constantString = "Hgihlander"//変えられないなぜなら定数だから
 
