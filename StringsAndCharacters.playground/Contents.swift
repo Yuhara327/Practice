@@ -58,3 +58,41 @@ if emptyString.isEmpty {
 var variableString = "Horse"
 variableString += " and carriage"//変えられるなぜなら変数なので
 let constantString = "Hgihlander"//変えられないなぜなら定数だから
+print(variableString)
+//forinループで個々の文字列にアクセス
+for character in "Dog!🐶" {
+   print(character)
+}
+//一文字
+let exclamationMark: Character = "!"
+//Characterの配列を引数としてイニシャライザにわたして文字列
+let catCharacters: [Character] = ["C", "a", "t", "!", "🐱"]
+let catString = String(catCharacters)
+print(catString)
+//文字列とキャラクターの連結
+//文字列値は+で繋げられる
+let string1 = "hello"
+let string2 = " there"
+var welcome = string1 + string2
+print(welcome)
+//代入演算子も使えるよ
+var instruction = "look over"
+instruction += string2
+//append()メソッド CharacterをStringに追加できる
+welcome.append(exclamationMark)
+print(welcome) //Characterには追加できない。一文字だから
+//足した時に改行したい
+let badStart = """
+one
+two
+"""
+let end = """
+three
+"""
+print(badStart + end)//2行
+let goodStart = """
+one
+two
+
+"""
+print(goodStart + end)//3行
