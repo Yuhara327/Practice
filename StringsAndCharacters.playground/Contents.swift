@@ -96,3 +96,10 @@ two
 
 """
 print(goodStart + end)//3行
+//文字列補完
+let multiplier = 3
+let message = "\(multiplier) times 2.5 is \(Double(multiplier) * 2.5)"
+print(message)
+print(#"Write an interpolated string in Swift using \(multiplier)."#)//文字として出すとき
+print(#"6 times 7 is \#(6 * 7)."#)
+//文字列補完の中にバックスラッシュ、キャリッジリターン、ラインフィードを含めることはできない
